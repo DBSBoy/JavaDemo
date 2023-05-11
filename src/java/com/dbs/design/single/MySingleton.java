@@ -1,8 +1,8 @@
-package single;
+package src.java.com.dbs.design.single;
 
 public class MySingleton {
-	//volatile关键字保证对MySingleton对象的操作在不同的线程之间具有可见性，在一个线程修改变量的
-	//的同时，另外的变量也在修改的话，其中一个会被强制修改无效，直到另一个修改完成
+	//volatile锟截硷拷锟街憋拷证锟斤拷MySingleton锟斤拷锟斤拷牟锟斤拷锟斤拷诓锟酵拷锟斤拷叱锟街拷锟斤拷锟叫可硷拷锟皆ｏ拷锟斤拷一锟斤拷锟竭筹拷锟睫改憋拷锟斤拷锟斤拷
+	//锟斤拷同时锟斤拷锟斤拷锟斤拷谋锟斤拷锟揭诧拷锟斤拷薷牡幕锟斤拷锟斤拷锟斤拷锟揭伙拷锟斤拷岜磺匡拷锟斤拷薷锟斤拷锟叫э拷锟街憋拷锟斤拷锟揭伙拷锟斤拷薷锟斤拷锟斤拷
 	private  static  volatile  MySingleton instanceMySingleton=null;
 	   private  MySingleton() {}
 	   
@@ -11,7 +11,7 @@ public class MySingleton {
 		   if(instanceMySingleton!=null) {
 			   
 		   }else {
-			   //双重校验
+			   //双锟斤拷校锟斤拷
 			   if(instanceMySingleton==null) {
 				   synchronized (MySingleton.class) {
 					   

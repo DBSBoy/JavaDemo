@@ -1,12 +1,12 @@
-package single;
+package src.java.com.dbs.design.single;
 
 public class SingleObject {
-	//创建一个唯一对象，这个instance
+	//锟斤拷锟斤拷一锟斤拷唯一锟斤拷锟斤拷锟斤拷锟絠nstance
 	private static SingleObject instance=new SingleObject();
 	//private static SingleObject instance1=new SingleObject();
-	//不可实例化的构造函数
+	//锟斤拷锟斤拷实锟斤拷锟斤拷锟侥癸拷锟届函锟斤拷
 	private SingleObject() {};
-	//唯一实例的全局访问点,唯一可用对象
+	//唯一实锟斤拷锟斤拷全锟街凤拷锟绞碉拷,唯一锟斤拷锟矫讹拷锟斤拷
 	public static SingleObject getInstance(){
 	      return instance;
 	   }
